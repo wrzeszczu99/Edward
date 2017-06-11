@@ -48,7 +48,7 @@ namespace Simsy
                 case 3: //Biurko(Nuda), do dodania potem
                     ascii = '╦';
                     delta_health = 0;
-                    delta_hunger = -5;
+                    delta_hunger = -4;
                     delta_sleep = -5;
                     delta_bored = 7;
                     break;

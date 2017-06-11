@@ -4,3 +4,9 @@ D:\Olek\VS17\Projekty\Simsy\Simsy\bin\Debug\Simsy.pdb
 D:\Olek\VS17\Projekty\Simsy\Simsy\obj\Debug\Simsy.csprojResolveAssemblyReference.cache
 D:\Olek\VS17\Projekty\Simsy\Simsy\obj\Debug\Simsy.exe
 D:\Olek\VS17\Projekty\Simsy\Simsy\obj\Debug\Simsy.pdb
+C:\Users\Admin\Source\Repos\Edward\Edward\Simsy\bin\Debug\Simsy.exe.config
+C:\Users\Admin\Source\Repos\Edward\Edward\Simsy\bin\Debug\Simsy.exe
+C:\Users\Admin\Source\Repos\Edward\Edward\Simsy\bin\Debug\Simsy.pdb
+C:\Users\Admin\Source\Repos\Edward\Edward\Simsy\obj\Debug\Simsy.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Source\Repos\Edward\Edward\Simsy\obj\Debug\Simsy.exe
+C:\Users\Admin\Source\Repos\Edward\Edward\Simsy\obj\Debug\Simsy.pdb

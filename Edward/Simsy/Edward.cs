@@ -109,7 +109,7 @@ namespace Simsy
             R2 = rand.Next(-100, 100);
 
 
-                if (this.hunger < 70 && this.sleep > this.hunger)//lodówka(3,0) 
+                if (this.hunger < 35 && this.sleep > this.hunger && Koszt(E_x, E_y, 3, 0) >= 0)//lodówka(3,0) 
                 {
                     if (E_x > 0)
                     {
@@ -137,7 +137,7 @@ namespace Simsy
                     }
                 goto END;
                 }
-                if (this.sleep < 70 && this.sleep < this.hunger)//Łóżko(4,4)
+                if (this.sleep < 35 && this.sleep < this.hunger && Koszt(E_x,E_y,4,4)>=0)//Łóżko(4,4)
                 {
                     if (E_x > 4)
                     {
@@ -165,7 +165,7 @@ namespace Simsy
                     }
                 goto END;
                 }
-                if (((this.hunger > 70 && this.sleep > 70) && ((E_x != 0 && E_y != 3) || (E_x != 4 && E_y != 4))) || this.bored < 20)//Biórko (0,3)
+                if (((this.hunger > 70 && this.sleep > 70) && ((E_x != 0 && E_y != 3) || (E_x != 4 && E_y != 4))) || this.bored < 20 && Koszt(E_x, E_y, 3, 0) >= 0)//Biórko (0,3)
                 {
                     if (E_x > 3)
                     {
@@ -193,18 +193,35 @@ namespace Simsy
                     }
                 goto END;
                 }
-
+            /*
                 if (R1 > 0 && x + 1 != 5) x = x + 1;
                 if (R1 < 0 && x - 1 != -1) x = x - 1;
                 if (R2 > 0 && y + 1 != 5) y = y + 1;
                 if (R2 < 0 && y - 1 != -1) y = y - 1;
-
+            */
             END:;
 
 
         }
 
-
+        private int Koszt(int x1,int y1,int  x2 ,int y2)
+        {
+            int p =100;
+            if (x2 == 4 && y2 == 4)
+            {
+                p = this.sleep;
+            }
+            if (x2 == 0 && y2 == 3)
+            {
+                p = this.bored;
+            }
+            if (x2 == 3 && y2 == 0)
+            {
+                p = this.hunger;
+            }
+            int k = Math.Max(Math.Abs(x1 - x2), Math.Abs(y1 - y2))+ 35 - p;
+            return k;
+        }
 
         public int X()
         {
